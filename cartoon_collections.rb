@@ -25,7 +25,7 @@ end
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
 
-  sharedValues = planeteer_calls.filter {|n| valid_calls.include(n)}
+  sharedValues = planeteer_calls.filter {|n| valid_calls.include?(n)}
 
   if sharedValues[0]
     return sharedValues[0]
